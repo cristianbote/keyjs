@@ -4,8 +4,9 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "microbundle --watch --output dist --entry src/index.js"
+    "test": "jest",
+    "dev": "microbundle --watch --output dist --entry src/index.js",
+    "build": "microbundle --output dist --entry src/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,10 @@
   },
   "homepage": "https://github.com/cristianbote/keyjs#readme",
   "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-jest": "^26.1.0",
+    "jest": "^26.1.0",
     "microbundle": "^0.12.2"
   }
 }

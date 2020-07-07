@@ -21,7 +21,7 @@ function checkCombination(target) {
 
   if (savedCombos.has(currentCombo)) {
     const { handler, node } = savedCombos.get(currentCombo);
-    if (node && node.isEqualNode(target)) {
+    if (node && node === target) {
       handler(node);
     } else if (!node) {
       handler();
